@@ -1,5 +1,5 @@
-def call(){
+def call(Map config = [:]){
     // CommandWrapper grapper=new CommandWrapper("ln -ls");
     // grapper.executeCommand()
-    sh "pwd"
+    println(config.name)
 }
