@@ -1,6 +1,7 @@
+package es.yan
+
 import lombok.Getter;
 import lombok.Setter;
-package org.foot
 
 
 
