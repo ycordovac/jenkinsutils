@@ -1,7 +1,7 @@
-package org.foot
-
 import lombok.Getter;
 import lombok.Setter;
+package org.foot
+
 
 
 @Getter
