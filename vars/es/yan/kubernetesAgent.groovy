@@ -3,7 +3,7 @@ def call(Map config = [:]) {
 
     def ret = [:]
 
-    def agentCreator = renderTemplateText(templatePath:'./org//teralco/agentTemplate/kubernetesAgent.tpl',
+    def agentCreator = renderTemplateText(templatePath:'./es/yan/agentTemplate/kubernetesAgent.tpl',
         tokens: [
             imageName: config.imageName,
             credentialSecret: config.credentialSecret
