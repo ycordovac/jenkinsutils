@@ -61,6 +61,6 @@ class CommandWrapper{
     }
 
     Map<String, StringBuilder> executeCommand(){
-        return executeCommand(commandtoExecute, false)
+        return executeCommand(this.metadataCommand, false)
     }
 }
