@@ -9,12 +9,16 @@ class CommandWrapper{
     String agent
     String step
 
-    public CommandWrapper(String command){
+    public CommandWrapper(String commandtoExecute){
         this.metadataCommand=command
     }
 
     public CommandWrapper(){
         
+    }
+
+    String getMetadataCommand(){
+        return metadataCommand
     }
 
     boolean executeCommandWaitAndFillValues(String commandtoExecute){
