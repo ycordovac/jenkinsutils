@@ -10,7 +10,7 @@ class CommandWrapper{
     String step
 
     public CommandWrapper(String commandtoExecute){
-        this.metadataCommand=command
+        this.metadataCommand=commandtoExecute
     }
 
     public CommandWrapper(){
