@@ -8,6 +8,7 @@ class CommandWrapper{
     StringBuilder error
     String agent
     String step
+    Map<String, StringBuilder> resultMap
 
     public CommandWrapper(String commandtoExecute){
         this.metadataCommand=commandtoExecute
@@ -44,7 +45,7 @@ class CommandWrapper{
     }
 
     Map<String, StringBuilder> executeCommand(String commandtoExecute, boolean wait){
-        Map<String, StringBuilder> resultMap=new HashMap()
+        resultMap=new HashMap()
         def result = new StringBuilder()
         def error     = new StringBuilder()
 
