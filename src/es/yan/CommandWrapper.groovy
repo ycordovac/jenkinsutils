@@ -1,12 +1,5 @@
 package es.yan
 
-import lombok.Getter;
-import lombok.Setter;
-
-
-
-@Getter
-@Setter
 class CommandWrapper{
     String metadataFecha
     String metadataCommand
