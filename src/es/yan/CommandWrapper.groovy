@@ -56,20 +56,7 @@ class CommandWrapper{
             resultMap.put("result", result)
     }
 
-    Map<String, StringBuilder> executeCommand(){
-        Map<String, StringBuilder> resultMap=new HashMap()
-        def result = new StringBuilder()
-        def error     = new StringBuilder()
-
-        def comando = metadataCommand.execute()
-        comando.consumeProcessOutput(result, error)
-        if(wait){
-            comando.waitForOrKill(1000)
-        }
-
-        if (!error.toString().equals(""))
-            resultMap.put("error", error)
-        if(!result.toString().equals(""))
-            resultMap.put("result", result)
+    Map<String, StringBuilder> executeCommand(String commandtoExecute){
+        return executeCommand(commandtoExecute, false)
     }
 }
