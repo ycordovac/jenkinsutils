@@ -20,7 +20,7 @@ class CommandWrapper{
     boolean executeCommandWaitAndFillValues(String commandtoExecute){
         this.agent=env.NODE_NAME
         this.metadataFecha=new Date()
-        this.command=commandtoExecute
+        this.metadataCommand=commandtoExecute
         this.step=env.STAGE_NAME
         this.execute=false
         Map<String, StringBuilder> execute=executeCommand(commandtoExecute, true)
@@ -31,7 +31,7 @@ class CommandWrapper{
     boolean executeCommandAndFillValues(String commandtoExecute){
         this.agent=env.NODE_NAME
         this.metadataFecha=new Date()
-        this.command=commandtoExecute
+        this.metadataCommand=commandtoExecute
         this.step=env.STAGE_NAME
         this.execute=false
         Map<String, StringBuilder> execute=executeCommand(commandtoExecute, false)
@@ -56,7 +56,7 @@ class CommandWrapper{
             resultMap.put("result", result)
     }
 
-    Map<String, StringBuilder> executeCommand(String commandtoExecute){
+    Map<String, StringBuilder> executeCommand(){
         return executeCommand(commandtoExecute, false)
     }
 }
