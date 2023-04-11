@@ -1,5 +1,6 @@
 package es.yan
 
+
 class CommandWrapper{
     String metadataFecha
     String metadataCommand
@@ -18,9 +19,9 @@ class CommandWrapper{
         
     }
 
-    String getMetadataCommand(){
-        return metadataCommand
-    }
+    // String getMetadataCommand(){
+    //     return metadataCommand
+    // }
 
     boolean executeCommandWaitAndFillValues(String commandtoExecute){
         this.agent=env.NODE_NAME
